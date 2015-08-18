@@ -5,6 +5,6 @@ n = set(map(int, raw_input().split(' ')))
 m = input()
 m = set(map(int, raw_input().split(' ')))
 
-result = sorted([e for e in n.difference(m).union(m.difference(n))])
+result = sorted(n.difference(m).union(m.difference(n)))
 
 for e in result: print e
