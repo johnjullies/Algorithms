@@ -3,11 +3,7 @@
 def validatePhoneNumber(phone_number):
     import re
     
-    match = re.search(r"^[7-9]\d{9}$", phone_number)
-    if match:
-        return True
-    else:
-        return False
+    return True if re.search(r"^[7-9]\d{9}$", phone_number) else False
 
 if __name__ == "__main__":
     for _ in range(int(input())):
