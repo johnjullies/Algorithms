@@ -2,28 +2,8 @@
 
 string = input()
 
-print(string.isalnum())
-for letter in string:
-    if letter.isalpha(): 
-        print(True)
-        break
-else:
-    print(False)
-for letter in string:
-    if letter.isdigit(): 
-        print(True)
-        break
-else:
-    print(False)
-for letter in string:
-    if letter.islower(): 
-        print(True)
-        break
-else:
-    print(False)
-for letter in string:
-    if letter.isupper(): 
-        print(True)
-        break
-else:
-    print(False)
+print(any([s.isalnum() for s in string]))
+print(any([s.isalpha() for s in string]))
+print(any([s.isdigit() for s in string]))
+print(any([s.islower() for s in string]))
+print(any([s.isupper() for s in string]))
