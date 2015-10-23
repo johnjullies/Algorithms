@@ -1,0 +1,6 @@
+# https://www.hackerrank.com/challenges/fp-hello-world/
+
+hello_world = putStrLn "Hello World"
+
+main = do
+   hello_world
