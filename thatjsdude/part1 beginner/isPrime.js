@@ -1,5 +1,4 @@
-function isPrime(n)
-{
+function isPrime(n) {
   var divisor = 3, 
       limit = Math.sqrt(n);
   
