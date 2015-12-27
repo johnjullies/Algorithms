@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	Color:
+	<input type="radio" name="color" value="mediumpurple"> Purple
+	<input type="radio" name="color" value="lightgreen"> Green
+	<input type="radio" name="color" value="lightblue"> Blue
+	<script>
+	  var buttons = document.getElementsByName("color");
+	  function setColor(event) {
+	    document.body.style.background = event.target.value;
+	  }
+	  for (var i = 0; i < buttons.length; i++)
+	    buttons[i].addEventListener("change", setColor);
+	</script>
+</body>
+</html>
