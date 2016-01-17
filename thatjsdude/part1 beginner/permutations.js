@@ -16,7 +16,7 @@ function permutations(str) {
 
     restPerms = permutations(rest.join(''));
 
-    for (var j = 0, jLen = restPerms.length; j < jLen; j++) {
+    for (var j = 0; j < restPerms.length; j++) {
       next = picked.concat(restPerms[j]);
       perms.push(next.join(''));
     }
